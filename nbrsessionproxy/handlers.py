@@ -40,7 +40,6 @@ class RSessionProxyHandler(SuperviseAndProxyHandler):
 
     def get_cmd(self):
         # rsession command. Augmented with user-identity and www-port.
-        print('*************  testing logging *************')
         return [
             '/usr/lib/rstudio-server/bin/rserver',
             '--www-port=' + str(self.port)
